@@ -1,0 +1,3 @@
+/home/markov/Desktop/opengl/gameEngine/build/CMakeFiles/gameengine.dir
+/home/markov/Desktop/opengl/gameEngine/build/CMakeFiles/edit_cache.dir
+/home/markov/Desktop/opengl/gameEngine/build/CMakeFiles/rebuild_cache.dir
