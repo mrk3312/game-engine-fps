@@ -4,11 +4,13 @@
 #include <iostream>
 #include <filesystem>
 
-#include "mesh_loader.h"
+
+#include "obj_init_data.h"
 
 #include "scene.h"
 #include "camera.h"
 #include "action.h"
+#include "physics.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
 	glViewport(0, 0, width, height);
@@ -52,7 +54,8 @@ GLFWwindow* init_process(int width, int height, Camera& camera) {
 }
 
 int main(void) {
-	float lastFrame = 0;
+	float lastFrame = 0.0f;
+	Physics physics({0.0f, -10.0f, 0.0f});
 
 	Camera camera;
 
@@ -64,14 +67,14 @@ int main(void) {
 
 	Scene scene;
 
-	scene.addObj("cube.obj", {{0.0f, 0.0f, 0.0f}, {0.0f, 1.0f, 0.0f}, -45});
-	scene.addObj("cube.obj", {{0.0f, 5.0f, 0.0f}, {}, 0});
+	scene.addObj("cube.obj", {0.0f, {0.0f, 0.0f, 0.0f}});
+	scene.addObj("cube.obj", {0.01f, {10.0f, 5.0f, 0.0f}});
+	scene.addObj("cube.obj", {0.1f, {0.0f, 5.0f, 0.0f}});
 
 	while (!glfwWindowShouldClose(window)) {
 		float currentFrame = glfwGetTime(); 
 		float deltaTime = currentFrame - lastFrame;
 		lastFrame = currentFrame;		
-
 		process_input(window, camera, deltaTime);
 
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
@@ -88,9 +91,10 @@ int main(void) {
 		// }
 
 		camera.updateLookAt();
+		scene.update(physics, deltaTime);
 		scene.render(camera);
 		
-		camera.helper();
+		// camera.helper();
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}

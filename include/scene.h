@@ -1,32 +1,23 @@
 #pragma once
 
 #include <vector>
+#include <memory>
 
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
-
+#include "obj_builder.h"
 #include "object.h"
-#include "mesh_loader.h"
 
 class Camera;
-
-struct objPos{
-    glm::vec3 pos;
-    glm::vec3 rot;
-    float deg;
-};
+class Physics;
 
 class Scene{
 private:
-    glm::mat4 convObjPosToModel(const objPos &objPos);
+    ObjBuilder objBuilder;
 public:    
-    MeshLoader loader;
-    std::vector<Object> objects;
+    std::vector<std::unique_ptr<Object>> objects;
 
-// public:
+    void update(Physics& physics, float deltaTime);
     void render(Camera &camera);
-    void addObj(const char *loc, const objPos& objPos);
+    void addObj(const char *loc, const ObjData& objData);
     void removeObj();
     Scene(void) {};
 };
