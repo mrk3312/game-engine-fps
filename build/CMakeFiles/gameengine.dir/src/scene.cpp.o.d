@@ -172,9 +172,24 @@ CMakeFiles/gameengine.dir/src/scene.cpp.o: \
  /usr/include/c++/15/pstl/execution_defs.h /usr/include/c++/15/iostream \
  /usr/include/c++/15/ostream /usr/include/c++/15/bits/ostream.tcc \
  /usr/include/c++/15/istream /usr/include/c++/15/bits/istream.tcc \
- /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
- /usr/include/c++/15/cmath /usr/include/math.h \
- /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /home/markov/Desktop/opengl/gameEngine/include/obj_builder.h \
+ /home/markov/Desktop/opengl/gameEngine/include/mesh_loader.h \
+ /usr/include/c++/15/unordered_map \
+ /usr/include/c++/15/bits/unordered_map.h \
+ /usr/include/c++/15/bits/hashtable.h \
+ /usr/include/c++/15/bits/hashtable_policy.h \
+ /usr/include/c++/15/bits/enable_special_members.h \
+ /usr/include/c++/15/bits/node_handle.h \
+ /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/vector \
+ /usr/include/c++/15/bits/stl_vector.h \
+ /usr/include/c++/15/bits/stl_bvector.h \
+ /usr/include/c++/15/bits/vector.tcc \
+ /home/markov/Desktop/opengl/gameEngine/include/mesh.h \
+ /home/markov/Desktop/opengl/gameEngine/include/glad.h \
+ /usr/include/KHR/khrplatform.h /usr/include/glm/glm.hpp \
+ /usr/include/glm/detail/_fixes.hpp /usr/include/c++/15/cmath \
+ /usr/include/math.h /usr/include/bits/math-vector.h \
+ /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
  /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
  /usr/include/bits/mathcalls-helper-functions.h \
@@ -353,22 +368,9 @@ CMakeFiles/gameengine.dir/src/scene.cpp.o: \
  /usr/include/glm/ext/vector_uint1_sized.hpp /usr/include/c++/15/cstring \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/glm/gtc/type_ptr.inl \
- /home/markov/Desktop/opengl/gameEngine/include/mesh_loader.h \
- /usr/include/c++/15/unordered_map \
- /usr/include/c++/15/bits/unordered_map.h \
- /usr/include/c++/15/bits/hashtable.h \
- /usr/include/c++/15/bits/hashtable_policy.h \
- /usr/include/c++/15/bits/enable_special_members.h \
- /usr/include/c++/15/bits/node_handle.h \
- /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/vector \
- /usr/include/c++/15/bits/stl_vector.h \
- /usr/include/c++/15/bits/stl_bvector.h \
- /usr/include/c++/15/bits/vector.tcc \
- /home/markov/Desktop/opengl/gameEngine/include/mesh.h \
- /home/markov/Desktop/opengl/gameEngine/include/glad.h \
- /usr/include/KHR/khrplatform.h \
+ /home/markov/Desktop/opengl/gameEngine/include/obj_init_data.h \
  /home/markov/Desktop/opengl/gameEngine/include/object.h \
- /home/markov/Desktop/opengl/gameEngine/include/shader.h \
  /home/markov/Desktop/opengl/gameEngine/include/scene.h \
  /home/markov/Desktop/opengl/gameEngine/include/camera.h \
- /home/markov/Desktop/opengl/gameEngine/include/shader.h
+ /home/markov/Desktop/opengl/gameEngine/include/shader.h \
+ /home/markov/Desktop/opengl/gameEngine/include/physics.h

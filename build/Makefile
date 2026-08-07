@@ -273,6 +273,30 @@ src/mesh_loader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/src/mesh_loader.cpp.s
 .PHONY : src/mesh_loader.cpp.s
 
+src/obj_builder.o: src/obj_builder.cpp.o
+.PHONY : src/obj_builder.o
+
+# target to build an object file
+src/obj_builder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/src/obj_builder.cpp.o
+.PHONY : src/obj_builder.cpp.o
+
+src/obj_builder.i: src/obj_builder.cpp.i
+.PHONY : src/obj_builder.i
+
+# target to preprocess a source file
+src/obj_builder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/src/obj_builder.cpp.i
+.PHONY : src/obj_builder.cpp.i
+
+src/obj_builder.s: src/obj_builder.cpp.s
+.PHONY : src/obj_builder.s
+
+# target to generate assembly for a file
+src/obj_builder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/src/obj_builder.cpp.s
+.PHONY : src/obj_builder.cpp.s
+
 src/object.o: src/object.cpp.o
 .PHONY : src/object.o
 
@@ -296,6 +320,30 @@ src/object.s: src/object.cpp.s
 src/object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/src/object.cpp.s
 .PHONY : src/object.cpp.s
+
+src/physics.o: src/physics.cpp.o
+.PHONY : src/physics.o
+
+# target to build an object file
+src/physics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/src/physics.cpp.o
+.PHONY : src/physics.cpp.o
+
+src/physics.i: src/physics.cpp.i
+.PHONY : src/physics.i
+
+# target to preprocess a source file
+src/physics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/src/physics.cpp.i
+.PHONY : src/physics.cpp.i
+
+src/physics.s: src/physics.cpp.s
+.PHONY : src/physics.s
+
+# target to generate assembly for a file
+src/physics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/src/physics.cpp.s
+.PHONY : src/physics.cpp.s
 
 src/scene.o: src/scene.cpp.o
 .PHONY : src/scene.o
@@ -396,9 +444,15 @@ help:
 	@echo "... src/mesh_loader.o"
 	@echo "... src/mesh_loader.i"
 	@echo "... src/mesh_loader.s"
+	@echo "... src/obj_builder.o"
+	@echo "... src/obj_builder.i"
+	@echo "... src/obj_builder.s"
 	@echo "... src/object.o"
 	@echo "... src/object.i"
 	@echo "... src/object.s"
+	@echo "... src/physics.o"
+	@echo "... src/physics.i"
+	@echo "... src/physics.s"
 	@echo "... src/scene.o"
 	@echo "... src/scene.i"
 	@echo "... src/scene.s"

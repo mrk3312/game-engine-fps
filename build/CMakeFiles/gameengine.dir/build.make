@@ -212,6 +212,34 @@ CMakeFiles/gameengine.dir/src/scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gameengine.dir/src/scene.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markov/Desktop/opengl/gameEngine/src/scene.cpp -o CMakeFiles/gameengine.dir/src/scene.cpp.s
 
+CMakeFiles/gameengine.dir/src/physics.cpp.o: CMakeFiles/gameengine.dir/flags.make
+CMakeFiles/gameengine.dir/src/physics.cpp.o: /home/markov/Desktop/opengl/gameEngine/src/physics.cpp
+CMakeFiles/gameengine.dir/src/physics.cpp.o: CMakeFiles/gameengine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/markov/Desktop/opengl/gameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gameengine.dir/src/physics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameengine.dir/src/physics.cpp.o -MF CMakeFiles/gameengine.dir/src/physics.cpp.o.d -o CMakeFiles/gameengine.dir/src/physics.cpp.o -c /home/markov/Desktop/opengl/gameEngine/src/physics.cpp
+
+CMakeFiles/gameengine.dir/src/physics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gameengine.dir/src/physics.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markov/Desktop/opengl/gameEngine/src/physics.cpp > CMakeFiles/gameengine.dir/src/physics.cpp.i
+
+CMakeFiles/gameengine.dir/src/physics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gameengine.dir/src/physics.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markov/Desktop/opengl/gameEngine/src/physics.cpp -o CMakeFiles/gameengine.dir/src/physics.cpp.s
+
+CMakeFiles/gameengine.dir/src/obj_builder.cpp.o: CMakeFiles/gameengine.dir/flags.make
+CMakeFiles/gameengine.dir/src/obj_builder.cpp.o: /home/markov/Desktop/opengl/gameEngine/src/obj_builder.cpp
+CMakeFiles/gameengine.dir/src/obj_builder.cpp.o: CMakeFiles/gameengine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/markov/Desktop/opengl/gameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gameengine.dir/src/obj_builder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameengine.dir/src/obj_builder.cpp.o -MF CMakeFiles/gameengine.dir/src/obj_builder.cpp.o.d -o CMakeFiles/gameengine.dir/src/obj_builder.cpp.o -c /home/markov/Desktop/opengl/gameEngine/src/obj_builder.cpp
+
+CMakeFiles/gameengine.dir/src/obj_builder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gameengine.dir/src/obj_builder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markov/Desktop/opengl/gameEngine/src/obj_builder.cpp > CMakeFiles/gameengine.dir/src/obj_builder.cpp.i
+
+CMakeFiles/gameengine.dir/src/obj_builder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gameengine.dir/src/obj_builder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markov/Desktop/opengl/gameEngine/src/obj_builder.cpp -o CMakeFiles/gameengine.dir/src/obj_builder.cpp.s
+
 # Object files for target gameengine
 gameengine_OBJECTS = \
 "CMakeFiles/gameengine.dir/src/main.cpp.o" \
@@ -223,7 +251,9 @@ gameengine_OBJECTS = \
 "CMakeFiles/gameengine.dir/src/shader.cpp.o" \
 "CMakeFiles/gameengine.dir/src/camera.cpp.o" \
 "CMakeFiles/gameengine.dir/src/action.cpp.o" \
-"CMakeFiles/gameengine.dir/src/scene.cpp.o"
+"CMakeFiles/gameengine.dir/src/scene.cpp.o" \
+"CMakeFiles/gameengine.dir/src/physics.cpp.o" \
+"CMakeFiles/gameengine.dir/src/obj_builder.cpp.o"
 
 # External object files for target gameengine
 gameengine_EXTERNAL_OBJECTS =
@@ -238,13 +268,15 @@ gameengine: CMakeFiles/gameengine.dir/src/shader.cpp.o
 gameengine: CMakeFiles/gameengine.dir/src/camera.cpp.o
 gameengine: CMakeFiles/gameengine.dir/src/action.cpp.o
 gameengine: CMakeFiles/gameengine.dir/src/scene.cpp.o
+gameengine: CMakeFiles/gameengine.dir/src/physics.cpp.o
+gameengine: CMakeFiles/gameengine.dir/src/obj_builder.cpp.o
 gameengine: CMakeFiles/gameengine.dir/build.make
 gameengine: CMakeFiles/gameengine.dir/compiler_depend.ts
 gameengine: /usr/lib64/libglfw.so.3.4
 gameengine: /usr/lib64/libGLX.so
 gameengine: /usr/lib64/libOpenGL.so
 gameengine: CMakeFiles/gameengine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/markov/Desktop/opengl/gameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable gameengine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/markov/Desktop/opengl/gameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable gameengine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gameengine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

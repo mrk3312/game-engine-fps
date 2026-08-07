@@ -12,6 +12,8 @@ gameengine: \
   CMakeFiles/gameengine.dir/src/camera.cpp.o \
   CMakeFiles/gameengine.dir/src/action.cpp.o \
   CMakeFiles/gameengine.dir/src/scene.cpp.o \
+  CMakeFiles/gameengine.dir/src/physics.cpp.o \
+  CMakeFiles/gameengine.dir/src/obj_builder.cpp.o \
   /usr/lib64/libglfw.so.3.4 \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libdl.a \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libassimp.so \
@@ -77,6 +79,10 @@ CMakeFiles/gameengine.dir/src/camera.cpp.o:
 CMakeFiles/gameengine.dir/src/action.cpp.o:
 
 CMakeFiles/gameengine.dir/src/scene.cpp.o:
+
+CMakeFiles/gameengine.dir/src/physics.cpp.o:
+
+CMakeFiles/gameengine.dir/src/obj_builder.cpp.o:
 
 /usr/lib64/libglfw.so.3.4:
 

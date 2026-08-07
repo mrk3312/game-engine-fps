@@ -179,11 +179,10 @@ CMakeFiles/gameengine.dir/src/object.cpp.o: \
  /usr/include/c++/15/bits/ranges_uninitialized.h \
  /usr/include/c++/15/bits/ranges_algobase.h \
  /usr/include/c++/15/pstl/glue_memory_defs.h \
- /usr/include/c++/15/pstl/execution_defs.h \
- /home/markov/Desktop/opengl/gameEngine/include/object.h \
- /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
- /usr/include/c++/15/cmath /usr/include/math.h \
- /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/c++/15/pstl/execution_defs.h /usr/include/glm/glm.hpp \
+ /usr/include/glm/detail/_fixes.hpp /usr/include/c++/15/cmath \
+ /usr/include/math.h /usr/include/bits/math-vector.h \
+ /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
  /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
  /usr/include/bits/mathcalls-helper-functions.h \
@@ -362,5 +361,5 @@ CMakeFiles/gameengine.dir/src/object.cpp.o: \
  /usr/include/glm/ext/vector_uint1_sized.hpp /usr/include/c++/15/cstring \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/glm/gtc/type_ptr.inl \
- /home/markov/Desktop/opengl/gameEngine/include/shader.h \
+ /home/markov/Desktop/opengl/gameEngine/include/object.h \
  /home/markov/Desktop/opengl/gameEngine/include/mesh.h
