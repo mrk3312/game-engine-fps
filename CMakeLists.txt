@@ -26,6 +26,7 @@ add_executable(gameengine
             src/scene.cpp
             src/physics.cpp
             src/obj_builder.cpp
+            src/renderer.cpp
             )
 
 target_link_libraries(gameengine PRIVATE OpenGL::GL glfw dl assimp)

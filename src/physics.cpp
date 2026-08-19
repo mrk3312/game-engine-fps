@@ -4,6 +4,8 @@
 
 #include "object.h"
 #include "physics.h"
+#include "scene.h"
+
 #include <iostream>
 
 void Physics::handleObjPhysics(Object &obj, float deltaTime){
@@ -32,6 +34,19 @@ void Physics::handleObjPhysics(Object &obj, float deltaTime){
     obj.translate(step);
 }
 
-Physics::Physics(glm::vec3 gravity){
-    this->gravity = gravity;
+void Physics::simulateScene(float deltaTime){
+    
+    for (int i = 0; i < this->scene.objects.size(); i++){
+        Object& object = *(this->scene.objects[i]);
+
+        if (object.invMass == 0.0f){
+            continue;
+        } 
+        this->handleObjPhysics(object, deltaTime);
+    }
+
+}
+
+Physics::Physics(glm::vec3 obj_gravity, Scene &obj_scene) : gravity(obj_gravity), scene(obj_scene){
+    
 }

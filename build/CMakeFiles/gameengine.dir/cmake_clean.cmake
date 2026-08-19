@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gameengine.dir/src/object.cpp.o.d"
   "CMakeFiles/gameengine.dir/src/physics.cpp.o"
   "CMakeFiles/gameengine.dir/src/physics.cpp.o.d"
+  "CMakeFiles/gameengine.dir/src/renderer.cpp.o"
+  "CMakeFiles/gameengine.dir/src/renderer.cpp.o.d"
   "CMakeFiles/gameengine.dir/src/scene.cpp.o"
   "CMakeFiles/gameengine.dir/src/scene.cpp.o.d"
   "CMakeFiles/gameengine.dir/src/shader.cpp.o"

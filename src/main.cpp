@@ -11,6 +11,7 @@
 #include "camera.h"
 #include "action.h"
 #include "physics.h"
+#include "renderer.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
 	glViewport(0, 0, width, height);
@@ -54,18 +55,18 @@ GLFWwindow* init_process(int width, int height, Camera& camera) {
 }
 
 int main(void) {
-	float lastFrame = 0.0f;
-	Physics physics({0.0f, -10.0f, 0.0f});
-
+	Scene scene;
 	Camera camera;
+	float lastFrame = 0.0f;
 
+	Physics physics({0.0f, -10.0f, 0.0f}, scene);
+	Renderer renderer(scene, camera);
+	
 	GLFWwindow *window = init_process(800, 600, camera);
 	
 	if (!window) {
 		return -1;
 	}
-
-	Scene scene;
 
 	scene.addObj("cube.obj", {0.0f, {0.0f, 0.0f, 0.0f}});
 	scene.addObj("cube.obj", {0.01f, {10.0f, 5.0f, 0.0f}});
@@ -91,8 +92,8 @@ int main(void) {
 		// }
 
 		camera.updateLookAt();
-		scene.update(physics, deltaTime);
-		scene.render(camera);
+		physics.simulateScene(deltaTime);
+		renderer.render();
 		
 		// camera.helper();
 		glfwSwapBuffers(window);

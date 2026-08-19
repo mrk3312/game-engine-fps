@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/markov/Desktop/opengl/gameEngine/src/obj_builder.cpp" "CMakeFiles/gameengine.dir/src/obj_builder.cpp.o" "gcc" "CMakeFiles/gameengine.dir/src/obj_builder.cpp.o.d"
   "/home/markov/Desktop/opengl/gameEngine/src/object.cpp" "CMakeFiles/gameengine.dir/src/object.cpp.o" "gcc" "CMakeFiles/gameengine.dir/src/object.cpp.o.d"
   "/home/markov/Desktop/opengl/gameEngine/src/physics.cpp" "CMakeFiles/gameengine.dir/src/physics.cpp.o" "gcc" "CMakeFiles/gameengine.dir/src/physics.cpp.o.d"
+  "/home/markov/Desktop/opengl/gameEngine/src/renderer.cpp" "CMakeFiles/gameengine.dir/src/renderer.cpp.o" "gcc" "CMakeFiles/gameengine.dir/src/renderer.cpp.o.d"
   "/home/markov/Desktop/opengl/gameEngine/src/scene.cpp" "CMakeFiles/gameengine.dir/src/scene.cpp.o" "gcc" "CMakeFiles/gameengine.dir/src/scene.cpp.o.d"
   "/home/markov/Desktop/opengl/gameEngine/src/shader.cpp" "CMakeFiles/gameengine.dir/src/shader.cpp.o" "gcc" "CMakeFiles/gameengine.dir/src/shader.cpp.o.d"
   "/home/markov/Desktop/opengl/gameEngine/src/stb_image.cpp" "CMakeFiles/gameengine.dir/src/stb_image.cpp.o" "gcc" "CMakeFiles/gameengine.dir/src/stb_image.cpp.o.d"
