@@ -82,7 +82,11 @@
 			[
 				{
 					"backtrace" : 7,
-					"path" : "/home/markov/Desktop/opengl/gameEngine/include"
+					"path" : "/home/markov/Desktop/git-projects/github/game-engine-fps/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/markov/Desktop/git-projects/github/game-engine-fps/external"
 				}
 			],
 			"language" : "CXX",
@@ -121,7 +125,11 @@
 			[
 				{
 					"backtrace" : 7,
-					"path" : "/home/markov/Desktop/opengl/gameEngine/include"
+					"path" : "/home/markov/Desktop/git-projects/github/game-engine-fps/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/markov/Desktop/git-projects/github/game-engine-fps/external"
 				}
 			],
 			"language" : "C",

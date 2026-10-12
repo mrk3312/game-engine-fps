@@ -30,4 +30,4 @@ add_executable(gameengine
             )
 
 target_link_libraries(gameengine PRIVATE OpenGL::GL glfw dl assimp)
-target_include_directories(gameengine PRIVATE include)
+target_include_directories(gameengine PRIVATE include external)
